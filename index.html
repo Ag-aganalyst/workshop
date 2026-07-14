@@ -329,7 +329,7 @@ body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--t1);overf
       <div class="event-strip reveal rd2">
         <div class="es-row">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-          <span><strong>28th June 2026</strong> &nbsp;·&nbsp; 12:00 PM – 2:00 PM IST</span>
+          <span><strong>19th July 2026</strong> &nbsp;·&nbsp; 12:00 PM – 2:00 PM IST</span>
         </div>
         <div class="es-row">
           <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M15 10l-4 4l6 6l4-16l-18 7l4 2l2 6l3-4"/></svg>
@@ -357,19 +357,19 @@ body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--t1);overf
 <div class="ticker-bar">
   <div class="ticker-track">
     <div class="ticker-item"><span>🔥 23 students</span> registered in last hour <div class="tdot"></div></div>
-    <div class="ticker-item"><span>Decode the Market</span> — Live Webinar · 28th June 2026 <div class="tdot"></div></div>
+    <div class="ticker-item"><span>Decode the Market</span> — Live Webinar · 19th July 2026 <div class="tdot"></div></div>
     <div class="ticker-item">Only <span id="t-seats">490</span> seats remaining <div class="tdot"></div></div>
     <div class="ticker-item"><span>Decode the Market</span> — By AG Analyst · SEBI Reg. <div class="tdot"></div></div>
-    <div class="ticker-item">Workshop starts <span id="t-time">28th June 2026</span> <div class="tdot"></div></div>
+    <div class="ticker-item">Workshop starts <span id="t-time">19th July 2026</span> <div class="tdot"></div></div>
     <div class="ticker-item"><span>SEBI Reg. INH000011501</span> · Verified Analyst <div class="tdot"></div></div>
     <div class="ticker-item"><span>4.9★ rated</span> by 5,000+ students <div class="tdot"></div></div>
     <div class="ticker-item"><span>Decode the Market</span> — Swing Trading Masterclass <div class="tdot"></div></div>
     <!-- dup for loop -->
     <div class="ticker-item"><span>🔥 23 students</span> registered in last hour <div class="tdot"></div></div>
-    <div class="ticker-item"><span>Decode the Market</span> — Live Webinar · 28th June 2026 <div class="tdot"></div></div>
+    <div class="ticker-item"><span>Decode the Market</span> — Live Webinar · 19th July 2026 <div class="tdot"></div></div>
     <div class="ticker-item">Only <span>490</span> seats remaining <div class="tdot"></div></div>
     <div class="ticker-item"><span>Decode the Market</span> — By AG Analyst · SEBI Reg. <div class="tdot"></div></div>
-    <div class="ticker-item">Workshop starts <span>28th June 2026</span> <div class="tdot"></div></div>
+    <div class="ticker-item">Workshop starts <span>19th July 2026</span> <div class="tdot"></div></div>
     <div class="ticker-item"><span>SEBI Reg. INH000011501</span> · Verified Analyst <div class="tdot"></div></div>
     <div class="ticker-item"><span>4.9★ rated</span> by 5,000+ students <div class="tdot"></div></div>
     <div class="ticker-item"><span>Decode the Market</span> — Swing Trading Masterclass <div class="tdot"></div></div>
@@ -617,7 +617,7 @@ body{font-family:"DM Sans",sans-serif;background:var(--bg);color:var(--t1);overf
     </div>
     <div class="reg-card reveal rd1">
       <div class="reg-card-header">
-        <div class="rch-tag">🔥 Limited Offer · 28th June 2026</div>
+        <div class="rch-tag">🔥 Limited Offer · 19th July 2026</div>
         <div class="rch-title">Decode the Market — Live Webinar</div>
         <div class="rch-price-row">
           <span class="rch-price">₹51</span>
@@ -717,8 +717,8 @@ const PAYMENT_URL = "https://web.aganalyst.in/courses/806594?quick-pay=true";
 
 // ── SEATS ──
 const TOTAL=500,INITIAL=490;
-function getSeats(){const v=localStorage.getItem("ag_seats2");return v!==null?parseInt(v):INITIAL}
-function saveSeats(n){localStorage.setItem("ag_seats2",Math.max(1,n))}
+function getSeats(){const v=localStorage.getItem("ag_seats3");return v!==null?parseInt(v):INITIAL}
+function saveSeats(n){localStorage.setItem("ag_seats3",Math.max(1,n))}
 function renderSeats(){
   const n=getSeats(),taken=TOTAL-n,pct=Math.min(99,(taken/TOTAL)*100);
   document.getElementById("seats-num").textContent=n+" seats left";
@@ -746,9 +746,9 @@ function doRegister(){
 }
 renderSeats();simRegs();
 
-// ── COUNTDOWN to 28th June 2026 12:00 PM IST ──
+// ── COUNTDOWN to 19th July 2026 12:00 PM IST ──
 function getTarget(){
-  return new Date("2026-06-28T06:30:00Z"); // 12:00 PM IST = 06:30 UTC — 28th June 2026
+  return new Date("2026-07-19T06:30:00Z"); // 12:00 PM IST = 06:30 UTC — 19th July 2026
 }
 function tick(){
   const diff=getTarget()-new Date();
